@@ -28,6 +28,14 @@ def run_schedule():
         schedule.run_pending()
         time.sleep(1)
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # Загружает переменные из .env
+
+TOKEN = os.environ['BOT_TOKEN']
+
+
 if __name__ == "__main__":
     # Планируем уведомления
     schedule_notifications()
