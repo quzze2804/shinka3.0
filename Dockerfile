@@ -9,4 +9,5 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Запуск бота
-CMD ["python", "bot.py"]
+CMD ["python", "-u", "bot.py"]
+
